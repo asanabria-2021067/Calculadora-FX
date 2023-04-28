@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" focusTraversable="true" prefHeight="463.0" prefWidth="312.0" styleClass="anchor-pane" stylesheets="@fxmlcalculadoraview1.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.angelsanabria.controller.FXMLCalculadoraController">
+   <children>
+      <GridPane layoutX="19.0" layoutY="121.0" prefHeight="330.0" prefWidth="281.0" stylesheets="@fxmlcalculadoraview1.css">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="108.0" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="botones-numericos" fx:id="btnCero" mnemonicParsing="false" onAction="#clicCero" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" text="0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button id="button-clear" fx:id="btnLimpiar" alignment="BASELINE_CENTER" mnemonicParsing="false" onAction="#clicLimpiar" prefHeight="50.0" prefWidth="130.0" styleClass="button-clear" stylesheets="@fxmlcalculadoraview1.css" text="AC" textFill="WHITE" GridPane.columnSpan="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Button>
+            <Button id="botones-numericos" fx:id="btnSiete" mnemonicParsing="false" onAction="#clicSiete" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="7" GridPane.rowIndex="2" />
+            <Button id="botones-numericos" fx:id="btnOcho" mnemonicParsing="false" onAction="#clicOcho" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button id="botones-operacion" fx:id="btnPorcentaje" mnemonicParsing="false" onAction="#clicPorcentaje" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="\%" GridPane.columnIndex="3" />
+            <Button id="botones-numericos" fx:id="btnCuatro" mnemonicParsing="false" onAction="#clicCuatro" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="4" GridPane.rowIndex="3" />
+            <Button id="botones-numericos" fx:id="btnCinco" mnemonicParsing="false" onAction="#clicCinco" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button id="botones-numericos" fx:id="btnNueve" mnemonicParsing="false" onAction="#clicNueve" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button id="botones-numericos" fx:id="btnSeis" mnemonicParsing="false" onAction="#clicSeis" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button id="botones-operacion" fx:id="btnDividir" mnemonicParsing="false" onAction="#clicDivision" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="÷" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button id="botones-operacion" fx:id="btnMultiplicar" mnemonicParsing="false" onAction="#clicMultiplicacion" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button id="botones-operacion" fx:id="btnResta" mnemonicParsing="false" onAction="#clicResta" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button id="botones-numericos" fx:id="btnUno" mnemonicParsing="false" onAction="#clicUno" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="1" GridPane.rowIndex="4" />
+            <Button id="botones-operacion" fx:id="btnInversoAditivo" mnemonicParsing="false" onAction="#clicInversoA" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="±" GridPane.rowIndex="5" />
+            <Button id="botones-numericos" fx:id="btnDos" mnemonicParsing="false" onAction="#clicDos" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button id="botones-numericos" fx:id="btnTres" mnemonicParsing="false" onAction="#clicTres" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button id="botones-numericos" fx:id="btnPunto" mnemonicParsing="false" onAction="#clicPunto" prefHeight="52.0" prefWidth="61.0" styleClass="botones-numericos" stylesheets="@fxmlcalculadoraview1.css" text="." GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button id="botones-operacion" fx:id="btnSuma" mnemonicParsing="false" onAction="#clicSuma" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button id="button-igual" fx:id="btnIgual" mnemonicParsing="false" onAction="#clicIgual" prefHeight="52.0" prefWidth="61.0" styleClass="button-igual" stylesheets="@fxmlcalculadoraview1.css" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button id="botones-operacion" fx:id="btnInversoMultiplicativo" mnemonicParsing="false" onAction="#clicInversoMultiplicativo" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="1/x" GridPane.rowIndex="1" />
+            <Button id="botones-operacion" fx:id="btnExponente" mnemonicParsing="false" onAction="#clicExponente" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="x²" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button id="botones-operacion" fx:id="btnRaiz" mnemonicParsing="false" onAction="#clickRaiz" prefHeight="52.0" prefWidth="61.0" styleClass="botones-operacion" stylesheets="@fxmlcalculadoraview1.css" text="√" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="button-del" fx:id="btnDelete" mnemonicParsing="false" onAction="#clickDelete" prefHeight="52.0" prefWidth="61.0" styleClass="button-del" stylesheets="@fxmlcalculadoraview1.css" text="DEL" GridPane.columnIndex="2">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Label fx:id="lblPantalla" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="44.0" prefHeight="66.0" prefWidth="274.0" styleClass="label-pantalla" stylesheets="@fxmlcalculadoraview1.css" textAlignment="RIGHT">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Label>
+      <Label id="label-historial" fx:id="lblHistorial" alignment="CENTER_RIGHT" layoutX="19.0" layoutY="20.0" prefHeight="36.0" prefWidth="274.0" styleClass="label-historial" stylesheets="@fxmlcalculadoraview1.css" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,179 @@
+.anchor-pane{
+    -fx-background-color: #154360;
+    -fx-background-radius: 15 15 15 15;
+}
+.label-pantalla{
+    -fx-background-color: darkgrey;
+    -fx-border-fill: black;
+    -fx-font-size: 23px;   
+    -fx-background-radius: 20 20 20 20;
+
+}
+.label-historial{
+    -fx-background-color: grey;
+    -fx-border-fill: black;
+    -fx-font-size: 15px;
+    -fx-font-fill: whitesmoke;
+    -fx-background-radius: 10 10 0 0;
+
+}
+
+
+.card {
+    -fx-background-color: linear-gradient(to bottom right,#fc00ff, #00dbde);
+    -fx-background-radius:15px;
+}
+.keyResult{
+    -fx-background-color: linear-gradient(to bottom right, rgba(140, 0,143, 0.30), rgba(130, 0,133, 0.30));
+    -fx-background-radius:20px;
+    -fx-text-fill:#ffffff;
+    -fx-font-size:18px;
+}
+.button-clear{
+     -fx-background-color:
+         #d22222;
+    -fx-font-size: 18px;
+    -fx-background-radius: 13 13 13 13;
+    
+}
+.button-del{
+     -fx-background-color:
+         //#880101;
+         #A93226;
+    -fx-font-size: 18px;
+    -fx-text-fill: whitesmoke;
+    -fx-background-radius: 10 10 10 10;
+
+    
+}
+.button-igual{
+     -fx-background-color:
+         #006600;
+    -fx-font-size: 18px;
+    -fx-background-radius: 10 10 10 10;
+
+    
+}
+.botones-numericos{
+    /*
+    -fx-background-color:
+        #e7e7e7,
+    linear-gradient(#f2f2f2 6%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    */
+    
+    -fx-background-color:
+        #ABB2B9;
+    
+    -fx-background-radius: 10 10 10 10;
+    -fx-font-size: 12px; 
+    -fx-font-weight: Bold;
+}
+
+.botones-numericos:hover{
+    -fx-background-color:
+        #FF370F,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf5fd 8%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    fx-font-size: 16px;
+}
+
+.botones-numericos:pressed{
+    -fx-background-color:
+        #cee6f2;
+}    
+.label-pantalla{
+    -fx-background-color:
+        darkgray;
+    -fx-background-radius: 15 15 15 15;
+    -fx-text-fill: #000000;
+}    
+
+.botones-operacion{
+    /*
+    -fx-background-color:
+        #e7e7e7,
+    linear-gradient(#f2f2f2 6%, #ebebeb 49%, #dddddd 50%, #cfcfcf 100%);
+    */
+    -fx-background-color:
+        #ABB2B9;
+    -fx-font-size: 12px; 
+    -fx-font-weight: Bold;
+    -fx-background-radius: 10 10 10 10;
+
+    
+}
+
+.botones-operacion:hover{
+    -fx-background-color:
+        #FF370F,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf5fd 8%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    fx-font-size: 16px;
+}
+
+.button-igual:hover {
+    -fx-background-color:
+        #FF370F,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf5fd 8%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+    -fx-font-weight: Bold;
+}
+
+.button-clear:hover{
+    -fx-background-color:
+        #FF370F,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf5fd 8%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+    -fx-font-weight: Bold;
+}
+.button-clear:pressed{
+    -fx-background-color:
+        #cee6f2;
+}
+.button-del:hover{
+    -fx-background-color:
+        #FF370F,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf5fd 8%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-font-size: 18px;
+    -fx-text-fill: black;
+    -fx-font-weight: Bold;
+}
+.button-del:pressed{
+    -fx-background-color:
+        #cee6f2;
+}
+
+.button-igual:pressed{
+    -fx-background-color:
+        #cee6f2;
+}
+
+/*
+.css-button-sharp--red {
+  -fx-min-width: 130px;
+  -fx-height: 40px;
+  -fx-color: #fff;
+  -fx-font-weight: bold;
+  -fx-transition: all 0.3s ease;
+  -fx-position: relative;
+  -fx-display: inline-block;
+  -fx-outline: none;
+  -fx-border-size: 2px;
+  -fx-border-type: solid; 
+  -fx-border-color: #d90429;
+  -fx-background-color: #d22222;
+  -fx-font-size: 18px;
+}
+.css-button-sharp--red:hover {
+  -fx-background: #fff;
+  -fx-color: #d90429
+}
+.css-button-sharp--red:pressed {
+  -fx-background: #cee6f2;
+}
+*/
